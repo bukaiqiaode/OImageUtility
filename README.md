@@ -1,6 +1,8 @@
 # OImageUtility
 Written in Python 2.7.13, tested under (Windows 7 32-bit, Windows 10 64-bit).
+
 For how to set-up the environment, please read the comments in OImageUtil.py.
+
 Please find the binary for installing tesseract under folder 'binary'
 
 A small image processing class to 
