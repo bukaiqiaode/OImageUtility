@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 '''
 Kunwang, created on October 12th, 2017
 '''
@@ -40,6 +41,13 @@ class TestOImageUtil(unittest.TestCase):
         filename = r"150527133153.jpg"
         img = self.load_resource(filename)        
         self.assertEqual("Deactivate Netflix", util.ocrImage(img))
+        return
+    
+    def test_ocr_netflix_unicode(self):
+        util = O_ImageUtil()
+        filename = r"150527133153.jpg"
+        img = self.load_resource(filename)        
+        self.assertEqual(u'Deactivate Netﬂix', util.ocrImage(img))
         return
 
     def test_overlay_image(self):
